@@ -121,20 +121,8 @@ section ul li::marker {
 }
 
 /* Special styling for the home section address */
-#home p:first-of-type {
-    font-size: 1.15rem;
-    color: #6b3f00;
-    font-weight: 600;
-    background: rgba(218, 165, 32, 0.2);
-    display: inline-block;
-    padding: 0.6rem 1.2rem;
-    border-radius: 40px;
-    margin-top: 0.5rem;
-    border: 1px solid #daa520;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-#home p:last-of-type {
+/* Style both address lines at once */
+#home p {
     font-size: 1.15rem;
     color: #6b3f00;
     font-weight: 600;
