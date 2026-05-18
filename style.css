@@ -6,16 +6,16 @@
 
 body {
     font-family: Georgia, serif;
-    color: #2c2b28;
+    color: #e8e3d4;
     line-height: 1.6;
-    background: #fdf8ed;
-    background-image: radial-gradient(circle at 10% 20%, rgba(218, 185, 110, 0.05) 0%, rgba(200, 160, 80, 0.02) 90%);
+    background: #0a2f1f;
+    background-image: radial-gradient(circle at 10% 20%, rgba(218, 185, 110, 0.1) 0%, rgba(160, 120, 40, 0.05) 90%);
 }
 
-/* Header & Nav - Warm wood tone instead of plain green */
+/* Header & Nav - Darker wood tone to complement dark green */
 header {
-    background: linear-gradient(135deg, #4a3728 0%, #3b2a1f 100%);
-    color: #fef0cf;
+    background: linear-gradient(135deg, #2a3a1f 0%, #1e2e15 100%);
+    color: #daa520;
     padding: 1rem 2rem;
     position: sticky;
     top: 0;
@@ -25,8 +25,8 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 1rem;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
-    border-bottom: 1px solid rgba(255,215,150,0.3);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    border-bottom: 1px solid rgba(218, 165, 32, 0.4);
 }
 
 header h1 {
@@ -44,7 +44,7 @@ nav ul {
 }
 
 nav a {
-    color: #fef0cf;
+    color: #e8b33d;
     text-decoration: none;
     font-family: Arial, sans-serif;
     font-size: 0.95rem;
@@ -56,20 +56,20 @@ nav a {
 
 nav a:hover,
 nav a.active {
-    border-bottom-color: #e8c97a;
-    color: #ffe6a3;
+    border-bottom-color: #daa520;
+    color: #ffd966;
 }
 
-/* Sections - Warm, soft, elegant */
+/* Sections - Golden boxes */
 section {
     padding: 4rem 2rem;
     max-width: 900px;
     margin: 2rem auto;
-    background: #ffffff;
+    background: linear-gradient(135deg, #f9e4b7 0%, #f5d89c 100%);
     border-radius: 20px;
-    box-shadow: 0 8px 30px rgba(0,0,0,0.05), 0 2px 5px rgba(0,0,0,0.02);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.3), 0 2px 8px rgba(0,0,0,0.2);
     transition: all 0.3s ease;
-    border: 1px solid rgba(200, 170, 110, 0.15);
+    border: 1px solid rgba(218, 165, 32, 0.5);
 }
 
 section:not(:last-child) {
@@ -78,19 +78,20 @@ section:not(:last-child) {
 
 section:hover {
     transform: translateY(-3px);
-    box-shadow: 0 15px 40px rgba(0,0,0,0.08), 0 3px 8px rgba(0,0,0,0.03);
-    border-color: rgba(200, 170, 110, 0.3);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.35), 0 3px 8px rgba(0,0,0,0.2);
+    border-color: #daa520;
+    background: linear-gradient(135deg, #fae8bf 0%, #f6daa4 100%);
 }
 
 section h2 {
     font-size: 1.8rem;
-    color: #8b5a2b;
+    color: #6b3f00;
     margin-bottom: 1.2rem;
-    border-left: 5px solid #e8c97a;
+    border-left: 5px solid #b8860b;
     padding-left: 1rem;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: -0.3px;
-    background: linear-gradient(135deg, #8b5a2b 0%, #b87c3a 100%);
+    background: linear-gradient(135deg, #7a4b12 0%, #a86f20 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -100,7 +101,7 @@ section h2 {
 section p,
 section li {
     font-size: 1rem;
-    color: #3a3530;
+    color: #3a2a1a;
     line-height: 1.7;
 }
 
@@ -116,35 +117,30 @@ section ul li {
 
 /* Decorative element for list items */
 section ul li::marker {
-    color: #e8c97a;
+    color: #b8860b;
     font-size: 1.1em;
 }
 
 /* Special styling for the home section address */
 #home p:first-of-type {
     font-size: 1.15rem;
-    color: #8b5a2b;
-    font-weight: 500;
-    background: linear-gradient(135deg, #fef5e7, #fef0e0);
+    color: #6b3f00;
+    font-weight: 600;
+    background: rgba(218, 165, 32, 0.2);
     display: inline-block;
     padding: 0.6rem 1.2rem;
     border-radius: 40px;
     margin-top: 0.5rem;
-    border: 1px solid #e8d5b5;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+    border: 1px solid #daa520;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 /* Make "N/A" text more subtle but readable */
 section ul li {
-    color: #4a4540;
+    color: #4a3518;
 }
 
-section ul li:contains("N/A") {
-    color: #a0917a;
-    font-style: italic;
-}
-
-/* Subtle warm background for the body behind sections */
+/* Subtle gold leaf pattern overlay on dark green background */
 body::before {
     content: '';
     position: fixed;
@@ -152,7 +148,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" opacity="0.03"><path fill="none" stroke="%238b5a2b" stroke-width="0.5" d="M20,20 L30,25 L25,35 L15,30 Z M70,70 L80,75 L75,85 L65,80 Z M45,50 L50,48 L52,53 L47,55 Z"/><circle cx="85" cy="20" r="2" fill="%238b5a2b"/><circle cx="15" cy="80" r="1.5" fill="%238b5a2b"/></svg>');
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" opacity="0.08"><path fill="none" stroke="%23daa520" stroke-width="0.7" d="M20,20 L30,25 L25,35 L15,30 Z M70,70 L80,75 L75,85 L65,80 Z M45,50 L50,48 L52,53 L47,55 Z"/><circle cx="85" cy="20" r="2" fill="%23daa520"/><circle cx="15" cy="80" r="1.5" fill="%23daa520"/></svg>');
     background-repeat: repeat;
     pointer-events: none;
     z-index: -1;
@@ -188,15 +184,15 @@ section:target {
 
 @keyframes gentlePulse {
     0% {
-        box-shadow: 0 8px 30px rgba(0,0,0,0.05);
-        border-color: rgba(200, 170, 110, 0.15);
+        box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+        border-color: rgba(218, 165, 32, 0.5);
     }
     50% {
-        box-shadow: 0 8px 40px rgba(232, 201, 122, 0.2);
-        border-color: rgba(232, 201, 122, 0.5);
+        box-shadow: 0 8px 40px rgba(218, 165, 32, 0.4);
+        border-color: #ffd700;
     }
     100% {
-        box-shadow: 0 8px 30px rgba(0,0,0,0.05);
-        border-color: rgba(200, 170, 110, 0.15);
+        box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+        border-color: rgba(218, 165, 32, 0.5);
     }
 }
